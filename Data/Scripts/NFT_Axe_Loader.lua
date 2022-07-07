@@ -19,7 +19,7 @@ function NFT_Axe_Loader.ColorMeshes(item, seed)
 	end
 end
 
-function NFT_Axe_Loader.load(_, parentGroup)
+function NFT_Axe_Loader.load(player, parentGroup)
 	local tokenID = TOKENS[math.random(#TOKENS)].TokenID
 	local token, status, errorMsg = Blockchain.GetToken("0x495f947276749ce646f68ac8c248420045cb7b5e", tokenID)
 
