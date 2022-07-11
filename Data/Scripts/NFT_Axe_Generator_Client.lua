@@ -1,26 +1,25 @@
-local JSON = require(script:GetCustomProperty("JSON"))
-
-local PARENT_OBJECT = script:GetCustomProperty("ParentObject"):WaitForObject()
 local BLADES = require(script:GetCustomProperty("Blades"))
 local HANDLES = require(script:GetCustomProperty("Handles"))
-local MATERIALS = require(script:GetCustomProperty("Materials"))
+local CONTAINER = script:GetCustomProperty("Container"):WaitForObject()
 
-local currentItem = {}
-
+local currentItem = nil
 local list = {}
+local RNG = RandomStream.New(1)
 
 UI.SetCursorVisible(true)
 
 local function ClearPrevious()
-	if Object.IsValid(currentItem.blade) then
-		currentItem.blade:Destroy()
+	if currentItem ~= nil then
+		if Object.IsValid(currentItem.blade) then
+			currentItem.blade:Destroy()
+		end
+
+		if Object.IsValid(currentItem.handle) then
+			currentItem.handle:Destroy()
+		end
 	end
 
-	if Object.IsValid(currentItem.handle) then
-		currentItem.handle:Destroy()
-	end
-
-	currentItem = {}
+	currentItem = nil
 end
 
 local function InList(newItem)
@@ -63,14 +62,18 @@ local function InList(newItem)
 	return false
 end
 
-local function ColorMeshes(parent, color, key, slotName)
-	local meshes = parent:FindDescendantsByType("StaticMesh")
+local function ColorMeshes(color, key, slotName)
+	local meshes = CONTAINER:FindDescendantsByType("StaticMesh")
 
 	for m, mesh in ipairs(meshes) do
 		if mesh:GetCustomProperty("Ignore") == nil or not mesh:GetCustomProperty("Ignore") then
 			local material_slots = mesh:GetMaterialSlots()
 
 			for s, slot in ipairs(material_slots) do
+				if(key == "handlePrimaryColor") then
+					print(slot.slotName)
+				end
+
 				if string.find(tostring(slot), slotName) then
 					slot:SetColor(color)
 					currentItem[key] = color
@@ -81,95 +84,60 @@ local function ColorMeshes(parent, color, key, slotName)
 end
 
 local function ToStandardHex(color)
-	if(color) then
-		return color:ToStandardHex()
+	if color then
+		return color:ToStandardHex():sub(2)
 	end
 
-	return ""
+	return "--"
 end
 
 local function Generate()
 	ClearPrevious()
 
-	local bladeParent = PARENT_OBJECT:FindChildByName("Blade")
-	local handleParent = PARENT_OBJECT:FindChildByName("Handle")
+	currentItem = {
+		
+		handlePrimaryColor = Color.New(RNG:GetNumber(), RNG:GetNumber(), RNG:GetNumber()),
+		handleSecondaryColor = Color.New(RNG:GetNumber(), RNG:GetNumber(), RNG:GetNumber()),
+		handleTertiaryColor = Color.New(RNG:GetNumber(), RNG:GetNumber(), RNG:GetNumber())
 
-	currentItem.bladePrimaryColor = Color.New(math.random(), math.random(), math.random())
-	currentItem.bladeSecondaryColor = Color.New(math.random(), math.random(), math.random())
-	currentItem.bladeTertiaryColor = Color.New(math.random(), math.random(), math.random())
-
-	local bladeIndex = math.random(#BLADES)
-	local bladeRow = BLADES[bladeIndex]
-
-	bladeParent:SetPosition(bladeRow.Offset)
-	currentItem.blade = World.SpawnAsset(bladeRow.Template, { parent = bladeParent })
-	currentItem.bladeIndex = bladeIndex
-
-	if bladeRow.PrimaryColor then
-		ColorMeshes(bladeParent, Color.New(math.random(), math.random(), math.random()), "bladePrimaryColor", "BaseMaterial")
-	end
-
-	if bladeRow.SecondaryColor then
-		ColorMeshes(bladeParent, Color.New(math.random(), math.random(), math.random()), "bladeSecondaryColor", "Detail1")
-	end
-
-	if bladeRow.TertiaryColor then
-		ColorMeshes(bladeParent, Color.New(math.random(), math.random(), math.random()), "bladeTertiaryColor", "Detail2")
-	end
-
-	currentItem.handlePrimaryColor = Color.New(math.random(), math.random(), math.random())
-	currentItem.handleSecondaryColor = Color.New(math.random(), math.random(), math.random())
-	currentItem.handleTertiaryColor = Color.New(math.random(), math.random(), math.random())
+	}
 
 	local handleIndex = math.random(#HANDLES)
 	local handleRow = HANDLES[handleIndex]
 
-	handleParent:SetPosition(handleRow.Offset)
-	currentItem.handle = World.SpawnAsset(handleRow.Template, { parent = handleParent })
-	currentItem.handleIndex = handleIndex
+	currentItem.handle = World.SpawnAsset(handleRow.Template, { parent = CONTAINER })
 
-	if handleRow.PrimaryColor then
-		ColorMeshes(handleParent, Color.New(math.random(), math.random(), math.random()), "handlePrimaryColor", "BaseMaterial")
-	end
+	ColorMeshes(Color.New(RNG:GetNumber(), RNG:GetNumber(), RNG:GetNumber()), "handlePrimaryColor", "BaseMaterial")
+	ColorMeshes(Color.New(RNG:GetNumber(), RNG:GetNumber(), RNG:GetNumber()), "handleSecondaryColor", "Detail1")
+	ColorMeshes(Color.New(RNG:GetNumber(), RNG:GetNumber(), RNG:GetNumber()), "handleTertiaryColor", "Detail2")
 
-	if handleRow.SecondaryColor then
-		ColorMeshes(handleParent, Color.New(math.random(), math.random(), math.random()), "handleSecondaryColor", "Detail1")
-	end
+	currentItem.bladePrimaryColor = Color.New(RNG:GetNumber(), RNG:GetNumber(), RNG:GetNumber())
+	currentItem.bladeSecondaryColor = Color.New(RNG:GetNumber(), RNG:GetNumber(), RNG:GetNumber())
+	currentItem.bladeTertiaryColor = Color.New(RNG:GetNumber(), RNG:GetNumber(), RNG:GetNumber())
 
-	if handleRow.TertiaryColor then
-		ColorMeshes(handleParent, Color.New(math.random(), math.random(), math.random()), "handleTertiaryColor", "Detail2")
-	end
+	local bladeIndex = math.random(#BLADES)
+	local bladeRow = BLADES[bladeIndex]
 
+	currentItem.blade = World.SpawnAsset(bladeRow.Template, { parent = CONTAINER })
+	currentItem.bladeIndex = bladeIndex
+
+	ColorMeshes(Color.New(RNG:GetNumber(), RNG:GetNumber(), RNG:GetNumber()), "bladePrimaryColor", "BaseMaterial")
+	ColorMeshes(Color.New(RNG:GetNumber(), RNG:GetNumber(), RNG:GetNumber()), "bladeSecondaryColor", "Detail1")
+	ColorMeshes(Color.New(RNG:GetNumber(), RNG:GetNumber(), RNG:GetNumber()), "bladeTertiaryColor", "Detail2")
+	
 	if InList(currentItem) then
 		print("Item exists already")
-	else
-		print(string.format("Blade: %s\nBlade Primary: %s\nBlade Secondary: %s\nBlade Tertiary: %s\nOffset: %s",
+		ClearPrevious()
+	end
+end
 
-			currentItem.bladeIndex,
-			ToStandardHex(currentItem.bladePrimaryColor),
-			ToStandardHex(currentItem.bladeSecondaryColor),
-			ToStandardHex(currentItem.bladeTertiaryColor),
-			bladeRow.Offset
-
-		))
-
-		print(string.format("Handle: %s\nHandle Primary: %s\nHandle Secondary: %s\nHandle Tertiary: %s\nOffset: %s",
-
-			currentItem.handleIndex,
-			ToStandardHex(currentItem.handlePrimaryColor),
-			ToStandardHex(currentItem.handleSecondaryColor),
-			ToStandardHex(currentItem.handleTertiaryColor),
-			handleRow.Offset
-
-		))
-
+local function AddToList()
+	if currentItem ~= nil then
 		list[#list + 1] = currentItem
 	end
 end
 
 local function output()
-	print("Start Output")
-
 	local output = {}
 
 	for index, item in ipairs(list) do
@@ -182,30 +150,26 @@ local function output()
 
 		output[#output + 1] = entry
 
-		print(string.format("\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\"",
+		print("Blade:", item.bladeIndex)
 
-			item.bladeIndex,
-			item.handleIndex,
-			ToStandardHex(item.bladePrimaryColor),
-			ToStandardHex(item.bladeSecondaryColor),
-			ToStandardHex(item.bladeTertiaryColor),
-			ToStandardHex(item.handlePrimaryColor),
-			ToStandardHex(item.handleSecondaryColor),
-			ToStandardHex(item.handleTertiaryColor)
+		print("Blade Primary Color:", ToStandardHex(item.bladePrimaryColor))
+		print("Blade Secondary Color:", ToStandardHex(item.bladeSecondaryColor))
+		print("Blade Tertiary Color:", ToStandardHex(item.bladeTertiaryColor))
 
-		))
+		print("Handle Primary Color:", ToStandardHex(item.handlePrimaryColor))
+		print("Handle Secondary Color:", ToStandardHex(item.HandleSecondaryColor))
+		print("Handle Tertiary Color:", ToStandardHex(item.HandleTertiaryColor))
+	
+		print("------------------------------")
 	end
-
-	print("End Output")
 end
 
 Input.actionPressedEvent:Connect(function(player, action)
 	if action == "Shoot" then
 		Generate()
-	elseif action == "Aim" then
+	elseif action == "Jump" then
 		output()
-	elseif action == "Discard Last Axe" then
-		ClearPrevious()
-		list[#list] = nil
+	elseif action == "Aim" then
+		AddToList()
 	end
 end)

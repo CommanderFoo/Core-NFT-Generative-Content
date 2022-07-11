@@ -32,6 +32,7 @@ Objects {
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
   }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 9952944637906552382
@@ -75,6 +76,7 @@ Objects {
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
   }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 12198638479064726520
@@ -93,12 +95,6 @@ Objects {
   ParentId: 9952944637906552382
   UnregisteredParameters {
     Overrides {
-      Name: "cs:ParentObject"
-      ObjectReference {
-        SelfId: 16031383764864918721
-      }
-    }
-    Overrides {
       Name: "cs:Blades"
       AssetReference {
         Id: 3441108280241755788
@@ -107,25 +103,13 @@ Objects {
     Overrides {
       Name: "cs:Handles"
       AssetReference {
-        Id: 11970325934466363184
+        Id: 16043170263743444173
       }
     }
     Overrides {
-      Name: "cs:Colors"
-      AssetReference {
-        Id: 9516883596170347561
-      }
-    }
-    Overrides {
-      Name: "cs:Materials"
-      AssetReference {
-        Id: 5002415810874107990
-      }
-    }
-    Overrides {
-      Name: "cs:JSON"
-      AssetReference {
-        Id: 4722089891708959793
+      Name: "cs:Container"
+      ObjectReference {
+        SelfId: 12619351095688376535
       }
     }
   }
@@ -149,6 +133,7 @@ Objects {
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
   }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 16259004681959046947
@@ -189,6 +174,7 @@ Objects {
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
   }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 6094390452319198069
@@ -251,6 +237,7 @@ Objects {
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
   }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 16542811082861290118
@@ -303,6 +290,7 @@ Objects {
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
   }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 17327564527860693236
@@ -310,7 +298,7 @@ Objects {
   Transform {
     Location {
       X: -150
-      Z: 17.587738
+      Z: 14.6861143
     }
     Rotation {
     }
@@ -341,7 +329,7 @@ Objects {
     }
     RotationOffset {
     }
-    FieldOfView: 50
+    FieldOfView: 70
     ViewWidth: 1200
     RotationMode {
       Value: "mc:erotationmode:default"
@@ -355,12 +343,14 @@ Objects {
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
   }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 16031383764864918721
   Name: "Dummy Object"
   Transform {
     Location {
+      Z: 1.21372986
     }
     Rotation {
       Yaw: 89.9999619
@@ -372,8 +362,7 @@ Objects {
     }
   }
   ParentId: 16259004681959046947
-  ChildIds: 1565655520281217737
-  ChildIds: 13997659870327368491
+  ChildIds: 12619351095688376535
   UnregisteredParameters {
     Overrides {
       Name: "bp:Type"
@@ -413,10 +402,11 @@ Objects {
     TeamSettings {
     }
   }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
-  Id: 13997659870327368491
-  Name: "Handle"
+  Id: 12619351095688376535
+  Name: "Container"
   Transform {
     Location {
       Z: 6
@@ -449,42 +439,7 @@ Objects {
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
   }
-}
-Objects {
-  Id: 1565655520281217737
-  Name: "Blade"
-  Transform {
-    Location {
-      Z: 35
-    }
-    Rotation {
-      Yaw: 180
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16031383764864918721
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 10344209356887693116
@@ -515,7 +470,7 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Light {
-    Intensity: 39.690979
+    Intensity: 66.9767761
     Color {
       R: 1
       G: 1
@@ -546,6 +501,7 @@ Objects {
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
   }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 15069097787614543322
@@ -574,8 +530,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        G: 0.104762107
-        B: 0.330000162
+        R: 0.00065431156
+        G: 0.0669148713
+        B: 0.209374905
         A: 1
       }
     }
@@ -614,6 +571,7 @@ Objects {
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
   }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 17437071007952023421
@@ -653,6 +611,7 @@ Objects {
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
   }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 14982843161775482339
@@ -701,6 +660,7 @@ Objects {
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
   }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 10005074784157121906
@@ -738,6 +698,7 @@ Objects {
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
   }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 10505154200474359396
@@ -843,6 +804,7 @@ Objects {
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
   }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 7155168770677928712
@@ -928,6 +890,7 @@ Objects {
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
   }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 13551641546322277000
@@ -1064,6 +1027,7 @@ Objects {
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
   }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 16813558807825262224
@@ -1106,6 +1070,7 @@ Objects {
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
   }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 9086936746104183945
@@ -1144,4 +1109,5 @@ Objects {
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
   }
+  IsReplicationEnabledByDefault: true
 }

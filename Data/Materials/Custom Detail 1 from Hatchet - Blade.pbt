@@ -2,7 +2,7 @@ Assets {
   Id: 11353354928403736884
   Name: "Glow"
   PlatformAssetType: 13
-  SerializationVersion: 116
+  SerializationVersion: 118
   CustomMaterialAsset {
     BaseMaterialId: 16569473389266740197
     ParameterOverrides {
