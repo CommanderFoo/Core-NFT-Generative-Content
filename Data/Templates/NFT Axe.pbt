@@ -21,7 +21,6 @@ Assets {
         ChildIds: 2827588948235933408
         ChildIds: 5644449332654458576
         ChildIds: 2148400691177133307
-        ChildIds: 10465091503660072288
         ChildIds: 17683997477736488693
         UnregisteredParameters {
           Overrides {
@@ -309,7 +308,6 @@ Assets {
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
-        IsReplicationEnabledByDefault: true
       }
       Objects {
         Id: 10903716698203168478
@@ -464,7 +462,6 @@ Assets {
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
-        IsReplicationEnabledByDefault: true
       }
       Objects {
         Id: 6871205614711389974
@@ -549,7 +546,7 @@ Assets {
         Name: "Loading Geo"
         Transform {
           Location {
-            Z: -20
+            Z: 15
           }
           Rotation {
           }
@@ -560,8 +557,8 @@ Assets {
           }
         }
         ParentId: 12444641759231797986
-        ChildIds: 6355598053236307346
-        ChildIds: 3064271337627543481
+        ChildIds: 13383509521035297171
+        ChildIds: 5102887170688405628
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -584,11 +581,10 @@ Assets {
         IsReplicationEnabledByDefault: true
       }
       Objects {
-        Id: 6355598053236307346
-        Name: "Loading Geo Handle"
+        Id: 13383509521035297171
+        Name: "Handle"
         Transform {
           Location {
-            X: -0.819000244
           }
           Rotation {
           }
@@ -599,13 +595,126 @@ Assets {
           }
         }
         ParentId: 2148400691177133307
+        ChildIds: 15996052708711620774
+        ChildIds: 3642288736695675695
+        ChildIds: 6688283846873809174
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+        InstanceHistory {
+          SelfId: 131773108936037838
+          SubobjectId: 7681860553032114932
+          InstanceId: 13872343845000140168
+          TemplateId: 3847688197737179857
+          WasRoot: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
+        Id: 15996052708711620774
+        Name: "Fantasy Axe Grip 01"
+        Transform {
+          Location {
+            Z: -30.3110657
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 0.814058304
+          }
+        }
+        ParentId: 13383509521035297171
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Shared_Detail1:id"
+            Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
               Id: 17310264249461403527
             }
           }
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 17310264249461403527
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim2:id"
+            AssetReference {
+              Id: 17310264249461403527
+            }
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 820217430221713418
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+        InstanceHistory {
+          SelfId: 1535170295572839366
+          SubobjectId: 9079627147066068220
+          InstanceId: 13872343845000140168
+          TemplateId: 3847688197737179857
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
+        Id: 3642288736695675695
+        Name: "Fantasy Pommel 02"
+        Transform {
+          Location {
+            Z: -29.4061279
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.18333292
+            Y: 1.18333292
+            Z: 1.18333292
+          }
+        }
+        ParentId: 13383509521035297171
+        UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
@@ -625,7 +734,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 11597592556193149105
+            Id: 17616555706524180168
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -638,6 +747,12 @@ Assets {
             BoundsScale: 1
           }
         }
+        InstanceHistory {
+          SelfId: 8727685744812923494
+          SubobjectId: 1320014807752306012
+          InstanceId: 13872343845000140168
+          TemplateId: 3847688197737179857
+        }
         Relevance {
           Value: "mc:eproxyrelevance:critical"
         }
@@ -647,15 +762,81 @@ Assets {
         IsReplicationEnabledByDefault: true
       }
       Objects {
-        Id: 3064271337627543481
-        Name: "Loading Geo Blade"
+        Id: 6688283846873809174
+        Name: "Fantasy Hammer Guard 01"
         Transform {
           Location {
-            X: 0.819000244
-            Z: 46.709
+            Z: 12.7133179
           }
           Rotation {
-            Pitch: -19.8820038
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13383509521035297171
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 17310264249461403527
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 17310264249461403527
+            }
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1863549408108808768
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+        InstanceHistory {
+          SelfId: 15309917697206658407
+          SubobjectId: 13778926403904623197
+          InstanceId: 13872343845000140168
+          TemplateId: 3847688197737179857
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
+        Id: 5102887170688405628
+        Name: "Blade"
+        Transform {
+          Location {
+          }
+          Rotation {
           }
           Scale {
             X: 1
@@ -664,6 +845,53 @@ Assets {
           }
         }
         ParentId: 2148400691177133307
+        ChildIds: 16878488685885814012
+        ChildIds: 16398443234125162607
+        ChildIds: 12086845632068162844
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+        InstanceHistory {
+          SelfId: 13547255257339230912
+          SubobjectId: 14673978377881353947
+          InstanceId: 16167364228324652407
+          TemplateId: 4515525553600178295
+          WasRoot: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
+        Id: 16878488685885814012
+        Name: "Fantasy Axe Base 01"
+        Transform {
+          Location {
+            Z: 21.181427
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5102887170688405628
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -690,7 +918,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 4281380979366999084
+            Id: 170793496707065939
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -703,6 +931,12 @@ Assets {
             BoundsScale: 1
           }
         }
+        InstanceHistory {
+          SelfId: 12657114043374219885
+          SubobjectId: 15565266450841319030
+          InstanceId: 16167364228324652407
+          TemplateId: 4515525553600178295
+        }
         Relevance {
           Value: "mc:eproxyrelevance:critical"
         }
@@ -712,10 +946,13 @@ Assets {
         IsReplicationEnabledByDefault: true
       }
       Objects {
-        Id: 10465091503660072288
-        Name: "Client Geo"
+        Id: 16398443234125162607
+        Name: "Fantasy Axe Blade 01"
         Transform {
           Location {
+            X: -8.99999809
+            Y: -3.81469727e-06
+            Z: 36.7589417
           }
           Rotation {
           }
@@ -725,7 +962,27 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12444641759231797986
+        ParentId: 5102887170688405628
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 17310264249461403527
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 17310264249461403527
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 17310264249461403527
+            }
+          }
+        }
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -734,15 +991,109 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 18423898048047861963
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+        InstanceHistory {
+          SelfId: 3845741897711630187
+          SubobjectId: 4826491655520400240
+          InstanceId: 16167364228324652407
+          TemplateId: 4515525553600178295
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
+      }
+      Objects {
+        Id: 12086845632068162844
+        Name: "Fantasy Axe Blade 01"
+        Transform {
+          Location {
+            X: 8.99999809
+            Y: 3.81469727e-06
+            Z: 36.7589417
+          }
+          Rotation {
+            Yaw: -179.999954
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5102887170688405628
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 17310264249461403527
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 17310264249461403527
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 17310264249461403527
+            }
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
-        NetworkContext {
-          MinDetailLevel {
-            Value: "mc:edetaillevel:low"
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 18423898048047861963
           }
-          MaxDetailLevel {
-            Value: "mc:edetaillevel:ultra"
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
           }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+        InstanceHistory {
+          SelfId: 15417745259313384075
+          SubobjectId: 11696728767325556368
+          InstanceId: 16167364228324652407
+          TemplateId: 4515525553600178295
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
@@ -768,7 +1119,7 @@ Assets {
           Overrides {
             Name: "cs:ClientGeo"
             ObjectReference {
-              SubObjectId: 10465091503660072288
+              SelfId: 841534158063459245
             }
           }
           Overrides {
@@ -809,12 +1160,12 @@ Assets {
       }
     }
     Assets {
-      Id: 11597592556193149105
-      Name: "Hatchet - Handle"
+      Id: 820217430221713418
+      Name: "Fantasy Axe Grip 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_modern_axe_handle_001"
+        AssetId: "sm_weap_fan_grip_axe_001"
       }
     }
     Assets {
@@ -827,12 +1178,39 @@ Assets {
       }
     }
     Assets {
-      Id: 4281380979366999084
-      Name: "Hatchet - Blade"
+      Id: 17616555706524180168
+      Name: "Fantasy Pommel 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_modern_axe_001"
+        AssetId: "sm_weap_fan_pommel_002"
+      }
+    }
+    Assets {
+      Id: 1863549408108808768
+      Name: "Fantasy Hammer Guard 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_weap_fan_guard_hammer_001"
+      }
+    }
+    Assets {
+      Id: 170793496707065939
+      Name: "Fantasy Axe Base 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_weap_fan_base_axe_001"
+      }
+    }
+    Assets {
+      Id: 18423898048047861963
+      Name: "Fantasy Axe Blade 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_weap_fan_blade_axe_001"
       }
     }
     PrimaryAssetId {

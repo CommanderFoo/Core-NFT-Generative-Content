@@ -1,13 +1,13 @@
 Assets {
-  Id: 4515525553600178295
-  Name: "Blade"
+  Id: 3847688197737179857
+  Name: "Handle 1"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 14673978377881353947
+      RootId: 7681860553032114932
       Objects {
-        Id: 14673978377881353947
-        Name: "Blade"
+        Id: 7681860553032114932
+        Name: "Handle"
         Transform {
           Scale {
             X: 1
@@ -16,9 +16,9 @@ Assets {
           }
         }
         ParentId: 12619351095688376535
-        ChildIds: 15565266450841319030
-        ChildIds: 4826491655520400240
-        ChildIds: 11696728767325556368
+        ChildIds: 9079627147066068220
+        ChildIds: 1320014807752306012
+        ChildIds: 13778926403904623197
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -27,9 +27,6 @@ Assets {
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         Folder {
           IsGroup: true
@@ -40,21 +37,21 @@ Assets {
         IsReplicationEnabledByDefault: true
       }
       Objects {
-        Id: 15565266450841319030
-        Name: "Fantasy Axe Base 01"
+        Id: 9079627147066068220
+        Name: "Fantasy Axe Grip 01"
         Transform {
           Location {
-            Z: 21.181427
+            Z: -30.3110657
           }
           Rotation {
           }
           Scale {
             X: 1
             Y: 1
-            Z: 1
+            Z: 0.814058304
           }
         }
-        ParentId: 14673978377881353947
+        ParentId: 7681860553032114932
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -66,7 +63,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 170793496707065939
+            Id: 820217430221713418
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -88,23 +85,21 @@ Assets {
         IsReplicationEnabledByDefault: true
       }
       Objects {
-        Id: 4826491655520400240
-        Name: "Fantasy Axe Blade 01"
+        Id: 1320014807752306012
+        Name: "Fantasy Pommel 02"
         Transform {
           Location {
-            X: -8.99999809
-            Y: -3.81469727e-06
-            Z: 36.7589417
+            Z: -29.4061279
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.18333292
+            Y: 1.18333292
+            Z: 1.18333292
           }
         }
-        ParentId: 14673978377881353947
+        ParentId: 7681860553032114932
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -116,7 +111,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 18423898048047861963
+            Id: 17616555706524180168
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -138,16 +133,13 @@ Assets {
         IsReplicationEnabledByDefault: true
       }
       Objects {
-        Id: 11696728767325556368
-        Name: "Fantasy Axe Blade 01"
+        Id: 13778926403904623197
+        Name: "Fantasy Hammer Guard 01"
         Transform {
           Location {
-            X: 8.99999809
-            Y: 3.81469727e-06
-            Z: 36.7589417
+            Z: 12.7133179
           }
           Rotation {
-            Yaw: -179.999954
           }
           Scale {
             X: 1
@@ -155,7 +147,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14673978377881353947
+        ParentId: 7681860553032114932
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -167,7 +159,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 18423898048047861963
+            Id: 1863549408108808768
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -190,21 +182,30 @@ Assets {
       }
     }
     Assets {
-      Id: 170793496707065939
-      Name: "Fantasy Axe Base 01"
+      Id: 820217430221713418
+      Name: "Fantasy Axe Grip 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_base_axe_001"
+        AssetId: "sm_weap_fan_grip_axe_001"
       }
     }
     Assets {
-      Id: 18423898048047861963
-      Name: "Fantasy Axe Blade 01"
+      Id: 17616555706524180168
+      Name: "Fantasy Pommel 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_blade_axe_001"
+        AssetId: "sm_weap_fan_pommel_002"
+      }
+    }
+    Assets {
+      Id: 1863549408108808768
+      Name: "Fantasy Hammer Guard 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_weap_fan_guard_hammer_001"
       }
     }
     PrimaryAssetId {

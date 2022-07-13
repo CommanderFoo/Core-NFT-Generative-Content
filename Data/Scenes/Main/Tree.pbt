@@ -382,6 +382,12 @@ Objects {
       Name: "bp:Z Scale"
       Float: 1
     }
+    Overrides {
+      Name: "bp:Shape Visibility"
+      Enum {
+        Value: "mc:evolumevisibility:newenumerator0"
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -421,6 +427,8 @@ Objects {
     }
   }
   ParentId: 16031383764864918721
+  ChildIds: 14306088043802204182
+  ChildIds: 18366770575829549152
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -440,6 +448,74 @@ Objects {
     Value: "mc:eproxyrelevance:critical"
   }
   IsReplicationEnabledByDefault: true
+}
+Objects {
+  Id: 18366770575829549152
+  Name: "Handle 1"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12619351095688376535
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7681860553032114932
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Handle 1"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 3847688197737179857
+    }
+  }
+}
+Objects {
+  Id: 14306088043802204182
+  Name: "Blade 1"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12619351095688376535
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14673978377881353947
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Blade 1"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4515525553600178295
+    }
+  }
 }
 Objects {
   Id: 10344209356887693116
