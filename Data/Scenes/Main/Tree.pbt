@@ -329,7 +329,7 @@ Objects {
     }
     RotationOffset {
     }
-    FieldOfView: 70
+    FieldOfView: 60
     ViewWidth: 1200
     RotationMode {
       Value: "mc:erotationmode:default"

@@ -4,7 +4,8 @@ local CONTAINER = script:GetCustomProperty("Container"):WaitForObject()
 
 local currentItem = nil
 local list = {}
-local RNG = RandomStream.New(1)
+local RNG = RandomStream.New(2022)
+local ColorRNG = RandomStream.New(2022)
 
 UI.SetCursorVisible(true)
 
@@ -34,13 +35,13 @@ end
 
 local function ColorMeshes(item)
 	local meshes = item:FindDescendantsByType("StaticMesh")
-  
+
 	for m, mesh in ipairs(meshes) do
 		if mesh:GetCustomProperty("Ignore") == nil or not mesh:GetCustomProperty("Ignore") then
 			local material_slots = mesh:GetMaterialSlots()
 
 			for s, slot in ipairs(material_slots) do
-				slot:SetColor(Color.New(RNG:GetNumber(), RNG:GetNumber(), RNG:GetNumber()))
+				slot:SetColor(Color.New(ColorRNG:GetNumber(), ColorRNG:GetNumber(), ColorRNG:GetNumber()))
 			end
 		end
 	end
@@ -53,23 +54,25 @@ local function Generate()
 
 	currentItem = {
 
-		seed = RNG.seed
+		seed = ColorRNG.seed,
+		handleIndex = RNG:GetInteger(1, #HANDLES),
+		bladeIndex = RNG:GetInteger(1, #BLADES)
 
 	}
 
-	local handleRow = HANDLES[RNG:GetInteger(1, #HANDLES)]
+	local handleRow = HANDLES[currentItem.handleIndex]
 
 	currentItem.handle = World.SpawnAsset(handleRow.Template, { parent = CONTAINER })
-	ColorMeshes(currentItem.handle)
 
-	local bladeRow = BLADES[RNG:GetInteger(1, #BLADES)]
+	local bladeRow = BLADES[currentItem.bladeIndex]
 	currentItem.blade = World.SpawnAsset(bladeRow.Template, { parent = CONTAINER })
-
-	ColorMeshes(currentItem.blade)
 
 	if InList(currentItem.seed) then
 		print("Item exists already")
 		ClearPrevious()
+	else
+		ColorMeshes(currentItem.blade)
+		ColorMeshes(currentItem.handle)
 	end
 end
 

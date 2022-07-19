@@ -7,7 +7,7 @@ Assets {
       RootId: 14673978377881353947
       Objects {
         Id: 14673978377881353947
-        Name: "Blade"
+        Name: "Blade 1"
         Transform {
           Scale {
             X: 1
@@ -15,10 +15,11 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12619351095688376535
+        ParentId: 4781671109827199097
         ChildIds: 15565266450841319030
         ChildIds: 4826491655520400240
         ChildIds: 11696728767325556368
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -26,7 +27,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -37,7 +38,6 @@ Assets {
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
-        IsReplicationEnabledByDefault: true
       }
       Objects {
         Id: 15565266450841319030
@@ -55,6 +55,7 @@ Assets {
           }
         }
         ParentId: 14673978377881353947
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -85,7 +86,6 @@ Assets {
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
-        IsReplicationEnabledByDefault: true
       }
       Objects {
         Id: 4826491655520400240
@@ -105,6 +105,7 @@ Assets {
           }
         }
         ParentId: 14673978377881353947
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -135,7 +136,6 @@ Assets {
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
-        IsReplicationEnabledByDefault: true
       }
       Objects {
         Id: 11696728767325556368
@@ -156,6 +156,7 @@ Assets {
           }
         }
         ParentId: 14673978377881353947
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -186,7 +187,6 @@ Assets {
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
-        IsReplicationEnabledByDefault: true
       }
     }
     Assets {

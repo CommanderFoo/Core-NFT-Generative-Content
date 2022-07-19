@@ -15,16 +15,17 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12619351095688376535
+        ParentId: 4781671109827199097
         ChildIds: 1641251124519804158
+        WantsNetworking: true
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Folder {
           IsGroup: true
@@ -32,26 +33,26 @@ Assets {
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
-        IsReplicationEnabledByDefault: true
       }
       Objects {
         Id: 1641251124519804158
         Name: "Fantasy Axe Grip 01"
         Transform {
           Location {
-            X: 0.329695284
-            Y: 8.94069672e-08
-            Z: -14.3990631
+            X: 0.329690427
+            Y: 1.49011612e-07
+            Z: -9.86407471
           }
           Rotation {
           }
           Scale {
             X: 0.778050721
             Y: 0.778050721
-            Z: 1.01167929
+            Z: 1.04007196
           }
         }
         ParentId: 170229149535564534
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -82,7 +83,6 @@ Assets {
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
-        IsReplicationEnabledByDefault: true
       }
     }
     Assets {

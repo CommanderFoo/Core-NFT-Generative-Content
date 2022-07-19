@@ -13,37 +13,13 @@ Assets {
       Overrides {
         Name: "cs:Handles"
         AssetReference {
-          Id: 11970325934466363184
+          Id: 16043170263743444173
         }
       }
       Overrides {
-        Name: "cs:Grips"
+        Name: "cs:Tokens"
         AssetReference {
-          Id: 17156437802668740785
-        }
-      }
-      Overrides {
-        Name: "cs:Guards"
-        AssetReference {
-          Id: 8458242847385174079
-        }
-      }
-      Overrides {
-        Name: "cs:Materials"
-        AssetReference {
-          Id: 5002415810874107990
-        }
-      }
-      Overrides {
-        Name: "cs:Colors"
-        AssetReference {
-          Id: 9516883596170347561
-        }
-      }
-      Overrides {
-        Name: "cs:AsyncBlockchain"
-        AssetReference {
-          Id: 7641454249892616918
+          Id: 6188615335336412983
         }
       }
     }

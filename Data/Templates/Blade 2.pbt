@@ -7,7 +7,7 @@ Assets {
       RootId: 730127116935167584
       Objects {
         Id: 730127116935167584
-        Name: "Blade 1"
+        Name: "Blade 2"
         Transform {
           Scale {
             X: 1
@@ -15,17 +15,18 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12619351095688376535
+        ParentId: 4781671109827199097
         ChildIds: 1839562626491627213
         ChildIds: 7194148559663779371
+        WantsNetworking: true
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -36,7 +37,6 @@ Assets {
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
-        IsReplicationEnabledByDefault: true
       }
       Objects {
         Id: 1839562626491627213
@@ -54,6 +54,7 @@ Assets {
           }
         }
         ParentId: 730127116935167584
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -84,7 +85,6 @@ Assets {
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
-        IsReplicationEnabledByDefault: true
       }
       Objects {
         Id: 7194148559663779371
@@ -105,6 +105,7 @@ Assets {
           }
         }
         ParentId: 730127116935167584
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -135,7 +136,6 @@ Assets {
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
-        IsReplicationEnabledByDefault: true
       }
     }
     Assets {

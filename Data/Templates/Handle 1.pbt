@@ -7,7 +7,7 @@ Assets {
       RootId: 7681860553032114932
       Objects {
         Id: 7681860553032114932
-        Name: "Handle"
+        Name: "Handle 1"
         Transform {
           Scale {
             X: 1
@@ -15,18 +15,19 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 12619351095688376535
+        ParentId: 4781671109827199097
         ChildIds: 9079627147066068220
         ChildIds: 1320014807752306012
         ChildIds: 13778926403904623197
+        WantsNetworking: true
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Folder {
           IsGroup: true
@@ -34,7 +35,6 @@ Assets {
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
-        IsReplicationEnabledByDefault: true
       }
       Objects {
         Id: 9079627147066068220
@@ -52,6 +52,7 @@ Assets {
           }
         }
         ParentId: 7681860553032114932
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -82,7 +83,6 @@ Assets {
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
-        IsReplicationEnabledByDefault: true
       }
       Objects {
         Id: 1320014807752306012
@@ -100,6 +100,7 @@ Assets {
           }
         }
         ParentId: 7681860553032114932
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -130,7 +131,6 @@ Assets {
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
-        IsReplicationEnabledByDefault: true
       }
       Objects {
         Id: 13778926403904623197
@@ -148,6 +148,7 @@ Assets {
           }
         }
         ParentId: 7681860553032114932
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -178,7 +179,6 @@ Assets {
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
-        IsReplicationEnabledByDefault: true
       }
     }
     Assets {

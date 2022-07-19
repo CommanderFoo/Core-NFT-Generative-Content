@@ -543,7 +543,7 @@ Assets {
       }
       Objects {
         Id: 2148400691177133307
-        Name: "Loading Geo"
+        Name: "Axe Geo"
         Transform {
           Location {
             Z: 15
@@ -578,7 +578,6 @@ Assets {
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
-        IsReplicationEnabledByDefault: true
       }
       Objects {
         Id: 13383509521035297171
@@ -1119,7 +1118,7 @@ Assets {
           Overrides {
             Name: "cs:ClientGeo"
             ObjectReference {
-              SelfId: 841534158063459245
+              SubObjectId: 2148400691177133307
             }
           }
           Overrides {
