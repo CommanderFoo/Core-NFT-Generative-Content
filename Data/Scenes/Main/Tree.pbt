@@ -298,7 +298,7 @@ Objects {
   Transform {
     Location {
       X: -150
-      Z: 14.6861143
+      Z: 13.4803925
     }
     Rotation {
     }
@@ -329,7 +329,7 @@ Objects {
     }
     RotationOffset {
     }
-    FieldOfView: 60
+    FieldOfView: 68
     ViewWidth: 1200
     RotationMode {
       Value: "mc:erotationmode:default"

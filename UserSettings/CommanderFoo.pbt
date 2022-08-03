@@ -118,6 +118,11 @@ ObjectSettings {
     }
   }
   ObjectStates {
+    key: 10271317672309345079
+    value {
+    }
+  }
+  ObjectStates {
     key: 10395176010971475223
     value {
     }
@@ -135,6 +140,11 @@ ObjectSettings {
   }
   ObjectStates {
     key: 11280906472469661548
+    value {
+    }
+  }
+  ObjectStates {
+    key: 11325871125560427418
     value {
     }
   }
@@ -217,6 +227,11 @@ ObjectSettings {
     }
   }
   ObjectStates {
+    key: 17643628384901346257
+    value {
+    }
+  }
+  ObjectStates {
     key: 17858804253248278308
     value {
     }
@@ -232,4 +247,4 @@ ObjectSettings {
     }
   }
 }
-LastSavedScene: "Preview"
+LastSavedScene: "Main"

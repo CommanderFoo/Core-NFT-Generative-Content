@@ -1,13 +1,13 @@
 Assets {
-  Id: 12201491267268315522
+  Id: 15310073287796480409
   Name: "Blade 3"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 730127116935167584
+      RootId: 1406798982852403350
       Objects {
-        Id: 730127116935167584
-        Name: "Blade 3"
+        Id: 1406798982852403350
+        Name: "Blade 4"
         Transform {
           Scale {
             X: 1
@@ -16,8 +16,7 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 1839562626491627213
-        ChildIds: 7194148559663779371
+        ChildIds: 3189408284058254094
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -39,21 +38,23 @@ Assets {
         }
       }
       Objects {
-        Id: 1839562626491627213
-        Name: "Fantasy Axe Base 01"
+        Id: 3189408284058254094
+        Name: "Hatchet - Blade"
         Transform {
           Location {
-            Z: 21.1814117
+            X: -2.26705909
+            Y: -1.1920929e-06
+            Z: 26.7809
           }
           Rotation {
           }
           Scale {
-            X: 0.788579345
-            Y: 0.788579345
-            Z: 0.788579345
+            X: 0.669585228
+            Y: 0.669585228
+            Z: 0.903963923
           }
         }
-        ParentId: 730127116935167584
+        ParentId: 1406798982852403350
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -64,68 +65,21 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:forceoff"
         }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
         CoreMesh {
           MeshAsset {
-            Id: 170793496707065939
+            Id: 7500499865011890745
           }
           Teams {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 7194148559663779371
-        Name: "Fantasy Axe Blade 01"
-        Transform {
-          Location {
-            X: 6.5269227
-            Y: 3.33786e-06
-            Z: 37.0252533
-          }
-          Rotation {
-            Yaw: -179.999954
-          }
-          Scale {
-            X: 0.712474704
-            Y: 0.712474704
-            Z: 0.712474704
-          }
-        }
-        ParentId: 730127116935167584
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 18423898048047861963
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
+              Mass: 100
+              LinearDamping: 0.01
             }
             BoundsScale: 1
           }
@@ -139,21 +93,12 @@ Assets {
       }
     }
     Assets {
-      Id: 170793496707065939
-      Name: "Fantasy Axe Base 01"
+      Id: 7500499865011890745
+      Name: "Hatchet - Blade"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_base_axe_001"
-      }
-    }
-    Assets {
-      Id: 18423898048047861963
-      Name: "Fantasy Axe Blade 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_blade_axe_001"
+        AssetId: "sm_weap_modern_axe_001"
       }
     }
     PrimaryAssetId {
