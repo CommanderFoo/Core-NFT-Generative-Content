@@ -98,4 +98,5 @@ Assets {
     }
   }
   SerializationVersion: 118
+  VirtualFolderPath: "Handles"
 }

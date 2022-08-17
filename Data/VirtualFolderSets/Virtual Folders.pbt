@@ -23,5 +23,25 @@ Assets {
       VirtualFolderPath: "Equipment"
       PlatformAssetType: 3
     }
+    Folders {
+      VirtualFolderPath: "Blades"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "Handles"
+      PlatformAssetType: 5
+    }
+    Folders {
+      VirtualFolderPath: "NFT Axes"
+      PlatformAssetType: 31
+    }
+    Folders {
+      VirtualFolderPath: "NFT Axes"
+      PlatformAssetType: 13
+    }
+    Folders {
+      VirtualFolderPath: "NFT Axes"
+      PlatformAssetType: 3
+    }
   }
 }

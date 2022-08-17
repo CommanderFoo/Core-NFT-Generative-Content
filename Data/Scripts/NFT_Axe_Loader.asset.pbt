@@ -25,4 +25,5 @@ Assets {
     }
   }
   SerializationVersion: 118
+  VirtualFolderPath: "NFT Axes"
 }

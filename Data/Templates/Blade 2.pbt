@@ -162,4 +162,5 @@ Assets {
     }
   }
   SerializationVersion: 118
+  VirtualFolderPath: "Blades"
 }

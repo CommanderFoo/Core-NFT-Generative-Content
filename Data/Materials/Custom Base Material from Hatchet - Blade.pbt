@@ -3,6 +3,7 @@ Assets {
   Name: "Metal"
   PlatformAssetType: 13
   SerializationVersion: 118
+  VirtualFolderPath: "NFT Axes"
   CustomMaterialAsset {
     BaseMaterialId: 7615195788136862212
     ParameterOverrides {

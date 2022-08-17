@@ -3,6 +3,7 @@ Assets {
   Name: "Glow"
   PlatformAssetType: 13
   SerializationVersion: 118
+  VirtualFolderPath: "NFT Axes"
   CustomMaterialAsset {
     BaseMaterialId: 16569473389266740197
     ParameterOverrides {

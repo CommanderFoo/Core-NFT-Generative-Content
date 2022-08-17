@@ -3,6 +3,7 @@ Assets {
   Name: "Handles"
   PlatformAssetType: 31
   SerializationVersion: 118
+  VirtualFolderPath: "NFT Axes"
   DataTableAsset {
   }
 }
